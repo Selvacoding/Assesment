@@ -1,0 +1,6 @@
+# .gitignore
+.env
+generate_secret_key.py
+alembic.ini
+.vscode
+venv
