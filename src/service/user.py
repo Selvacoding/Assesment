@@ -44,10 +44,8 @@ def create_user(db: Session, user: UserCreate):
     db.refresh(db_user)
 
     return UserResponse(
-        id=db_user.id,
-        name=db_user.name,
-        email=db_user.email,
-        mobile=db_user.mobile
+        full_name=db_user.name,
+        email=db_user.email
     )
 
 def update_user(db: Session, user: User, user_update: UserUpdate):
